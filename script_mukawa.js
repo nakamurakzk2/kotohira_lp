@@ -87,6 +87,24 @@
     });
   }
 
+  const purchaseSection = document.querySelector('#section-purchase');
+  const purchaseFab = document.querySelector('.purchase-fab');
+  if (purchaseSection && purchaseFab && 'IntersectionObserver' in window) {
+    const body = document.body;
+    const purchaseObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          body.classList.add('is-in-purchase');
+        } else {
+          body.classList.remove('is-in-purchase');
+        }
+      });
+    }, {
+      threshold: 0.25
+    });
+    purchaseObserver.observe(purchaseSection);
+  }
+
   const revealNodes = document.querySelectorAll('[data-reveal]');
   if (revealNodes.length) {
     const reveal = (entries, observer) => {

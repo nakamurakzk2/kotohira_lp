@@ -491,14 +491,14 @@ ul {
 
 .purchase-intro__title {
   margin: 0;
-  font-size: clamp(22px, 3.2vw, 28px);
+  font-size: 1.25rem;
   letter-spacing: 0.08em;
   line-height: 1.6;
 }
 
 .purchase-intro__lead {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   line-height: 1.8;
   color: rgba(255, 255, 255, 0.85);
 }
@@ -548,7 +548,7 @@ ul {
 
 @media (max-width: 640px) {
   .section__title {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -569,7 +569,7 @@ ul {
 
 .mosaic__title--left {
   text-align: left;
-  font-size: 1.25rem;
+  font-size: 1rem;
   letter-spacing: 0.08em;
   color: rgba(26, 36, 56, 0.85);
 }
@@ -659,7 +659,7 @@ ul {
 
 .story-grid__heading {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   letter-spacing: 0.06em;
   font-weight: 700;
   color: rgba(26, 36, 56, 0.9);
@@ -790,7 +790,7 @@ ul {
 }
 
 .card__media::before {
-  content: "富山県舟橋村\A米の定期配送権4年分です。";
+  content: "むかわ町\A町長プレゼンテーション";
   z-index: 2;
   display: flex;
   align-items: center;
@@ -879,12 +879,12 @@ ul {
 
 .mosaic__title {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
 .mosaic__title.mosaic__title--left {
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 .mosaic__text {
@@ -960,7 +960,7 @@ ul {
 
 .offer-panel__title {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   letter-spacing: 0.06em;
   font-weight: 700;
   color: rgba(26, 36, 56, 0.9);
@@ -984,7 +984,7 @@ ul {
 }
 
 .offer-panel__price-value {
-  font-size: clamp(1.75rem, 4vw, 2rem);
+  font-size: clamp(1.25rem, 4vw, 2rem);
   font-weight: 700;
   letter-spacing: 0.06em;
 }
@@ -1068,7 +1068,7 @@ ul {
 
 .flow-diagram__title {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.06em;
   color: rgba(26, 36, 56, 0.9);
@@ -1319,8 +1319,9 @@ ul {
   color: #ffffff;
   text-decoration: none;
   text-align: center;
-  transition: transform var(--transition);
-  line-height: 1.;
+  transition: transform var(--transition), opacity 0.3s ease;
+  line-height: 1;
+  opacity: 1;
 }
 
 .purchase-fab:hover,
@@ -1348,9 +1349,14 @@ ul {
   line-height: 1.4;
 }
 
+.is-in-purchase .purchase-fab {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px);
+}
+
 .purchase-card {
   background: #ffffff;
-  border-radius: 14px;
   box-shadow: var(--shadow-sm);
   padding: clamp(32px, 6vw, 44px);
   display: grid;
@@ -1364,7 +1370,7 @@ ul {
   margin: 0;
   font-size: clamp(20px, 3vw, 24px);
   font-weight: 700;
-  line-height: 1.5;
+  line-height: 1.25;
   letter-spacing: 0.04em;
 }
 
