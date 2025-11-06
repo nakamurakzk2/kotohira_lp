@@ -1929,7 +1929,7 @@ body.no-js {
   }
 
   .section {
-    padding-block: clamp(48px, 16vw, 80px);
+    padding-block: clamp(12px, 16vw, 42px);
   }
 
   .card-grid--two {
