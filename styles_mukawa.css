@@ -453,7 +453,7 @@ ul {
 .section > .container {
   position: relative;
   padding-block: clamp(24px, 6vw, 56px);
-  padding-left: calc(var(--section-marker-left) + clamp(8px, 2vw, 20px));
+  padding-left: clamp(24px, 6vw, 48px);
   padding-right: clamp(24px, 6vw, 48px);
   background-color: #fff;
 }
@@ -939,7 +939,7 @@ ul {
   background: #ffffff;
   border: 1px solid #d1d3d4;
   border-radius: var(--radius-md);
-  padding: clamp(20px, 3vw, 32px);
+  padding: clamp(10px, 3vw, 10px);
   display: grid;
   gap: clamp(12px, 3vw, 20px);
   align-content: start;
@@ -1002,7 +1002,7 @@ ul {
 .offer-list {
   margin: 0;
   display: grid;
-  gap: clamp(12px, 3vw, 18px);
+  gap: clamp(6px, 3vw, 12px);
 }
 
 .offer-list__item {
@@ -1161,7 +1161,7 @@ ul {
   background: #ffffff;
   border: 1px solid #d1d3d4;
   border-radius: var(--radius-md);
-  padding: clamp(20px, 3vw, 32px);
+  padding: clamp(16px, 3vw, 24px);
   display: grid;
   gap: clamp(16px, 4vw, 24px);
 }
@@ -1223,7 +1223,7 @@ ul {
   align-items: center;
   background: #ffffff;
   border: 1px solid rgba(47, 92, 228, 0.12);
-  padding: clamp(24px, 5vw, 40px);
+  padding: clamp(12px, 5vw, 20px);
 }
 
 .summary-card__media {
@@ -1614,7 +1614,7 @@ ul {
   }
 
   .offer-panel {
-    padding: clamp(18px, 6vw, 24px);
+    padding: clamp(12px, 6vw, 20px);
     gap: 16px;
   }
 
@@ -1923,8 +1923,8 @@ body.no-js {
   }
 
   .section > .container {
-    padding-inline: clamp(16px, 8vw, 24px);
-    padding-left: clamp(20px, 9vw, 32px);
+    padding-inline: clamp(12px, 8vw, 20px);
+    padding-left: clamp(12px, 8vw, 20px);
   }
 
   .section::before,
