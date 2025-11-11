@@ -133,6 +133,9 @@ ul {
   .heritage__title {
     font-size: 1.25rem;
   }
+  .heritage__title br {
+    display: none;
+  }
 }
 
 .section--commentary .container {
@@ -2182,8 +2185,8 @@ body.no-js {
   }
 
   .section > .container {
-    padding-inline: clamp(12px, 8vw, 20px);
-    padding-left: clamp(12px, 8vw, 20px);
+    padding-inline: clamp(12px, 8vw, 16px);
+    padding-left: clamp(12px, 8vw, 16px);
   }
 
   .section::before,
