@@ -56,10 +56,6 @@ h2 {
     font-size: 1.75rem;
   }
 
-  .heritage__title {
-    font-size: 1.25rem;
-  }
-
   .heritage__description {
     font-size: 0.95rem;
   }
@@ -131,6 +127,12 @@ ul {
   font-size: 1rem;
   line-height: 2;
   text-align: left;
+}
+
+@media (max-width: 640px) {
+  .heritage__title {
+    font-size: 1.25rem;
+  }
 }
 
 .section--commentary .container {
@@ -301,6 +303,10 @@ ul {
 @media (max-width: 640px) {
   .details-list__row {
     grid-template-columns: 1fr;
+  }
+
+  .commentary__title {
+    font-size: 1.25rem;
   }
 }
 
