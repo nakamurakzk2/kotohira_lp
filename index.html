@@ -120,7 +120,7 @@
             <dl class="details-list">
               <div class="details-list__row">
                 <dt>体験内容</dt>
-                <dd>せりの仕掛け体験、揚幕引き、舞台での記念撮影</dd>
+                <dd>せりの仕掛け体験、舞台での記念撮影</dd>
               </div>
               <div class="details-list__row">
                 <dt>開催場所</dt>
@@ -132,7 +132,7 @@
               </div>
               <div class="details-list__row">
                 <dt>時間</dt>
-                <dd>17:00〜18:30（集合 16:40、終了 18:00予定）</dd>
+                <dd>17:00〜18:00（集合 16:40、終了 18:00予定）</dd>
               </div>
               <div class="details-list__row">
                 <dt>定員</dt>
@@ -140,7 +140,7 @@
               </div>
               <div class="details-list__row">
                 <dt>所要時間</dt>
-                <dd>約90分</dd>
+                <dd>約60分</dd>
               </div>
             </dl>
             <div class="details__notes">
@@ -162,107 +162,7 @@
         </div>
       </section>
 
-      <section id="section-purchase" class="section section--purchase" data-section-title="テキスト">
-        <div class="container">
-          <div class="purchase-intro">
-            <h2 class="purchase-intro__title">TOKKEN新規アカウントのご登録と商品の購入はこちらから</h2>
-            <p class="purchase-intro__lead">
-              アカウントの登録後、登録完了メールが届きます。<br/>
-              登録完了メールから商品をご購入ください。
-            </p>
-          </div>
-
-          <div class="purchase-card">
-            <h3 class="purchase-card__title">商品名: 旧金毘羅大芝居の「せり」の仕掛け体験権利</h3>
-
-            <div class="purchase-quantity">
-              <span class="purchase-card__label">数量</span>
-              <div class="purchase-quantity__controls" role="group" aria-label="数量調整">
-                <button class="purchase-quantity__btn" type="button" aria-label="数量を1減らす">−</button>
-                <span class="purchase-quantity__value" aria-live="polite">1</span>
-                <button class="purchase-quantity__btn" type="button" aria-label="数量を1増やす">＋</button>
-              </div>
-            </div>
-
-            <form class="purchase-form" action="#" method="post">
-              <div class="purchase-form__group">
-                <label class="sr-only" for="purchase-email">メールアドレス</label>
-                <input id="purchase-email" name="purchase-email" type="email" placeholder="メールアドレス" required />
-              </div>
-              <div class="purchase-form__group">
-                <label class="sr-only" for="purchase-email-confirm">メールアドレス（確認）</label>
-                <input id="purchase-email-confirm" name="purchase-email-confirm" type="email" placeholder="メールアドレス（確認）" required />
-              </div>
-              <div class="purchase-form__group">
-                <label class="sr-only" for="purchase-password">パスワード</label>
-                <input id="purchase-password" name="purchase-password" type="password" placeholder="パスワード" required />
-              </div>
-              <div class="purchase-form__group">
-                <label class="sr-only" for="purchase-password-confirm">パスワード（確認）</label>
-                <input id="purchase-password-confirm" name="purchase-password-confirm" type="password" placeholder="パスワード（確認）" required />
-              </div>
-
-              <div class="purchase-form__agreements">
-                <div class="purchase-agreement">
-                  <div class="purchase-agreement__header">
-                    <div class="purchase-agreement__check">
-                      <input id="purchase-terms" type="checkbox" name="terms" required />
-                      <label for="purchase-terms"><strong>利用規約</strong></label>
-                      <button
-                        type="button"
-                        class="purchase-agreement__toggle"
-                        data-agreement-toggle="#agreement-terms"
-                        aria-expanded="false"
-                        aria-controls="agreement-terms"
-                        data-label-open="利用規約の文言を表示"
-                        data-label-close="利用規約の文言を閉じる"
-                        aria-label="利用規約の文言を表示"
-                      >
-                        ▼
-                      </button>
-                    </div>
-                  </div>
-                  <div id="agreement-terms" class="purchase-agreement__content" hidden>
-                    <p>本サービスをご利用いただくにあたり、以下の利用規約に同意いただいたものとみなします。</p>
-                    <p>当社は、予告なく本サービスの内容を変更・中止する場合があります。</p>
-                    <p>利用者は、法令および公序良俗に反する行為を行ってはなりません。</p>
-                    <p>当社は、利用者または第三者のトラブルについて一切の責任を負いません。</p>
-                  </div>
-                </div>
-
-                <div class="purchase-agreement">
-                  <div class="purchase-agreement__header">
-                    <div class="purchase-agreement__check">
-                      <input id="purchase-privacy" type="checkbox" name="privacy" required />
-                      <label for="purchase-privacy"><strong>プライバシーポリシー</strong></label>
-                      <button
-                        type="button"
-                        class="purchase-agreement__toggle"
-                        data-agreement-toggle="#agreement-privacy"
-                        aria-expanded="false"
-                        aria-controls="agreement-privacy"
-                        data-label-open="プライバシーポリシーの文言を表示"
-                        data-label-close="プライバシーポリシーの文言を閉じる"
-                        aria-label="プライバシーポリシーの文言を表示"
-                      >
-                        ▼
-                      </button>
-                    </div>
-                  </div>
-                  <div id="agreement-privacy" class="purchase-agreement__content" hidden>
-                    <p>当社は、個人情報を適切に管理し、目的外の利用は一切行いません。</p>
-                    <p>取得した情報は、サービスの提供および運営に必要な範囲でのみ使用します。</p>
-                    <p>法令に基づく場合を除き、第三者への提供はいたしません。</p>
-                    <p>個人情報の取扱いに関するお問い合わせには誠実に対応いたします。</p>
-                  </div>
-                </div>
-              </div>
-
-              <button class="purchase-submit" type="submit">登録して購入に進む</button>
-            </form>
-          </div>
-        </div>
-      </section>
+      
     </main>
 
     <a class="purchase-fab" href="#section-purchase" aria-label="購入フォームへ移動">
@@ -273,11 +173,6 @@
       </span>
     </a>
 
-    <footer class="site-footer">
-      <div class="container site-footer__inner">
-        <small>&copy; <span data-year></span> テキストテキスト</small>
-      </div>
-    </footer>
 
     <script src="./script_kotohira.js" defer></script>
   </body>
